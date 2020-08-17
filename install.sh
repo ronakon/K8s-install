@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 
 apt-get update && apt-get upgrade -y
-apt install apt-transport-https -y curl && pt-get update
+apt install apt-transport-https curl -y && pt-get update
 apt-get install docker.io -y
 systemctl start docker
 systemctl enable docker
